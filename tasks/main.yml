@@ -1,2 +1,14 @@
 ---
-# tasks file for favorites
+- name: install emacs
+  yum: name=emacs-nox state=present
+  tags:
+    - favorites
+    - packages
+
+- name: install wget
+  yum: name=wget state=present
+  tags:
+    - favorites
+    - packages
+
+
