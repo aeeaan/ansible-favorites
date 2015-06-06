@@ -11,4 +11,8 @@
     - favorites
     - packages
 
-
+- name: install unzip
+  yum: name=unzip state=present
+  tags:
+    - favorites
+    - packages
